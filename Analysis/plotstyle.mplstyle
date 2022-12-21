@@ -1,0 +1,34 @@
+# Remove top and right spines
+axes.spines.right: False
+axes.spines.top: False
+
+# Set background to white instead of transparent
+figure.facecolor: white
+
+# Increase dots per inches
+figure.dpi: 300
+
+# Increase thickness of axes and ticks
+axes.linewidth: 2
+xtick.major.width: 2
+xtick.major.size: 3.5  
+xtick.minor.size: 2.5
+xtick.minor.width: 1
+
+ytick.major.width: 2
+ytick.major.size: 3.5  
+ytick.minor.size: 2.5
+ytick.minor.width: 1
+
+# Fonts size
+axes.titlesize : 10
+axes.labelsize: 10
+legend.fontsize : 10
+xtick.labelsize: 10
+ytick.labelsize: 10 
+
+# Set colour of points (Colorbrewer "Dark2")
+axes.prop_cycle: cycler('color', ['1b9e77', 'd95f02', '7570b3', 'e7298a', '66a61e', 'e6ab02', 'a6761d'])
+
+font.family: sans-serif
+font.sans-serif: Arial
