@@ -8,17 +8,19 @@ This Github repository contains all code necessary for reproducing the analysis 
 
 **Transformation and generation of pseudo-tubes**
 
-Pre-processing and splitting of pre-gated (T-cell) data was performed using the script ```Split_MFC.R```. In this script, pre-gated FCS files are transformed with unique co-factors and split into pseudo-tubes. This results in 3 different FCS files with either the suffix _gt (original, transformed data), _ff1 (pseudotube 1) or _ff2 (pseudotube 2).
+Pre-processing and splitting of pre-gated (T-cell) data was performed using the script ```Split_MFC.R```. For the real-life data, the ```Preprocess_MFC_RL.R``` was used. For Mosmann and Nilsonn datasets, the ```Split_Mosmann.R``` and ```Split_Nilsson.R``` files were used.
+
+In this script, pre-gated FCS files are transformed with split into pseudo-tubes. This results in 3 different FCS files with either the suffix _gt (original, transformed data), _ff1 (pseudotube 1) or _ff2 (pseudotube 2).
 
 
 
 **Imputation of pseudo-tubes**
 
-Imputation of pseudo-tubes is performed in the script ```Impute_MFC.R```. Please account for the fact that this script does not impute for Infinicyt and requires these files to be already present beforehand. 
+Imputation of pseudo-tubes is performed in the script ```Impute_MFC.R```.  For the other datasets, please find the other R scripts which are named after the respective dataset.
+
+Please account for the fact that this script does not impute for Infinicyt and requires these files to be already present beforehand. 
 
 The script ```CytoBackBone_MOD.R``` contains a modified version of the ```merge``` function which is used in ```Impute_MFC.R```.
-
-Additionally, the script ```KNN.R``` imputes split files using the FNN library using k=1 for a comparison between KNN and Infinicyt as described in the supplementary figure.
 
 
 
@@ -30,16 +32,42 @@ Gating was performed on aggregated files of ground truth and imputed data. These
 
 **Generation of gating labels**
 
-The scripts ```Get_MFC_Gating.R```  and ```Get_SingleMarker_MFC_Gating.R``` usesFlowJo workspace files in combination with the aggregated fcs files to generate csv files containing the gating labels.
+The script ```Get_MFC_Gating.R```  uses FlowJo workspace files in combination with the aggregated fcs files to generate csv files containing the gating labels.
 
 
 
-### Analysis and interpretation of results (Python)
+### Where to find the code for every plot in the manuscript
 
 All analyses were performed in Jupyter notebooks. 
 
-* Figure 3 and 4 were generated in ```Density_Plots.ipynb```
-* Figures 2, 5 and Supplemental Figures 5 and 6 were generated in ```Distance_Plots.ipynb```
-* Supplemental Figure 4 was generated in ```Infinicyt_Plots.ipynb```
-* Figures 6 and 7 and Supplemental Figures 7 and 8 were generated in ```Labeling_Plots.ipynb```
 
+
+Figure 2: ```Distance_Plots.ipynb```
+
+Figure 3: ```Density_Plots.ipynb```
+
+Figure 4: ```Density_Plots.ipynb```
+
+Figure 5: ```Distance_Plots.ipynb```
+
+Figure 6: ```Backbone_Experiment.ipynb```
+
+Figure 7: ```Labeling_Plots.ipynb```
+
+
+
+Supplemental Figure 3: ```Distance_Plots.ipynb```
+
+Supplemental Figure 4: ```Infinicyt_Plots.ipynb```
+
+Supplemental Figure 5:  ```Distance_Plots.ipynb```
+
+Supplemental Figure 6:  ```Distance_Plots.ipynb```
+
+Supplemental Figure 7:  ``Distance_Plots.ipynb``
+
+Supplemental Figure 8: ```FlowSOM_analysis.ipynb```
+
+Supplemental Figure 9: ```Labeling_Plots.ipynb```
+
+Supplemental Figure 10: ```FlowSOM_analysis.ipynb```
