@@ -40,19 +40,13 @@ The script ```Get_MFC_Gating.R```  uses FlowJo workspace files in combination wi
 
 All analyses were performed in Jupyter notebooks. 
 
+Figure 2A, 2B, 2C: ```Distance_Plots.ipynb```
 
+Figure 3A, 3B, 3C: ```Density_Plots.ipynb```
 
-Figure 2: ```Distance_Plots.ipynb```
+Figure 3D, 3E: ```Distance_Plots.ipynb```
 
-Figure 3: ```Density_Plots.ipynb```
-
-Figure 4: ```Density_Plots.ipynb```
-
-Figure 5: ```Distance_Plots.ipynb```
-
-Figure 6: ```Backbone_Experiment.ipynb```
-
-Figure 7: ```Labeling_Plots.ipynb```
+Figure 4: ```Backbone_Experiment.ipynb```
 
 
 
@@ -66,8 +60,11 @@ Supplemental Figure 6:  ```Distance_Plots.ipynb```
 
 Supplemental Figure 7:  ``Distance_Plots.ipynb``
 
-Supplemental Figure 8: ```FlowSOM_analysis.ipynb```
+Supplemental Figure 8: ```Labeling_Plots.ipynb```
 
 Supplemental Figure 9: ```Labeling_Plots.ipynb```
 
 Supplemental Figure 10: ```FlowSOM_analysis.ipynb```
+
+Supplemental Figure 11: ```Backbone_experiment.ipynb```
+
